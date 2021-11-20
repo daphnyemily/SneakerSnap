@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SneakerSnap</title>
+    <script src="https://kit.fontawesome.com/1b23973fb1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="profile.css" />
+  </head>
+<body>
+<div class="container">
+
+  <div class="page-header text-center">
+    <h1>YOUR PROFILE</h1>
+    <a href="/feed">Feed</a>
+    <a href="/logout">Logout</a>
+  </div>
+
+    <div class="row">
+
+        <div class="upload">
+ 
+          <h2>Upload Your Item</h2>
+           <% if (user.local.email) { %>
+            
+          <form action="/upload" method="POST" enctype="multipart/form-data">
+            <input type="number" min="$1" value="" name="price" placeholder="Starting Price ">
+             <input type="text" value="" name="caption" placeholder="Style Name">
+            <input class="form-control-file" type="file" name="file-to-upload">
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <% } %>
+      </div>
+      <div class="allPosts">
+        <% if (messages.length != 0) {%>
+        <% for(let i = 0; i < messages.length; i++) {%>
+          <div class="card images"> 
+            <h3><%= messages[i].caption %></h3>
+            <h4>$<%= messages[i].price %></h4>
+            <div class="imgBx">
+              <img src = "<%= messages[i].img %>">
+            </div>             
+          </div>
+        <%} %>
+        <%} %>
+      </div>
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>

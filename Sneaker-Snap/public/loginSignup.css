@@ -1,0 +1,50 @@
+body{
+	display: flex;
+	padding-top:80px;
+	word-wrap:break-word;
+	background-color: rgb(227,92,197);
+	/* text-align: center; */
+	justify-content: center;
+	}
+.jumbotron h1{
+	color: #ebff6a;
+	font-size: 65px;
+}
+label{
+	color: white;
+}
+ .jumbotron{
+	display: flex;
+	background: radial-gradient(#ebff6a, transparent);
+	width: 800px;
+	justify-content: center;
+	}
+.page,.links{
+	display: flex;
+	margin: 0 50px 0 50px;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: baseline;
+	justify-content: center;
+}
+.links{
+	display: flex;
+	margin: 0 50px 0 50px;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	align-items: flex-start;
+}
+.page a{
+	  text-decoration: none;
+	  font-size: 50px;
+	  color: #ebff6a;
+	  margin: 0;
+}
+.container .card .imgBx img {
+		display: flex;
+		justify-content: flex-start;
+		width: 270px;
+		align-content: center;
+	}
+	

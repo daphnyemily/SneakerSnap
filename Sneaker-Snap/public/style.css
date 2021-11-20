@@ -1,0 +1,33 @@
+body{
+  padding-top:80px;
+  word-wrap:break-word;
+  background-color: rgb(227,92,197);
+}
+img{
+  height: 400px;
+}
+.img{
+  display: flex;
+}
+.jumbotron{
+  display: flex;
+   background: radial-gradient(#ebff6a, transparent);
+}
+.page{
+	display: flex;
+	justify-items: start;
+	width: 50%;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.page h1{
+	color: #87ff89;
+	font-size: 60px;
+
+}
+.page a{
+	text-decoration: none;
+	font-size: 50px;
+	color: #ebff6a;
+	margin: 0;
+}

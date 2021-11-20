@@ -1,0 +1,77 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Quicksand;
+}
+body {
+
+	background: #d457e3;
+}
+.page{
+	display: flex;
+	justify-items: start;
+	justify-content: start;
+	flex-direction: column;
+	align-content: flex-start;
+	align-items: flex-start;
+}
+.page h1{
+	color: white;
+	font-size: 65px;
+
+}
+.page a{
+	text-decoration: none;
+	font-size: 45px;
+	color: #ebff6a;
+	
+}
+.posts{
+	display: flex;
+	justify-content: center;
+}
+.allPosts{
+	display: flex;
+	align-content: center;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.container .card {
+	display: grid;
+	width: 620px;
+	/* height: 450px; */
+	border-radius: 20px;
+	background: linear-gradient(147deg, #f0ff02, #e400ff);
+	margin: 30px;
+	justify-content: center;
+}
+h2,h3,h4{
+	font-weight: 700;
+	margin: 20px;
+	font-size: 30px;
+	text-align: center;
+	color: 87ff89;
+	color: white;
+}
+button{
+	width: 100px;
+}
+.container .card .imgBx img {
+	display: flex;
+	justify-content: flex-start;
+	width: 270px;
+	align-content: center;
+}
+
+.comments{
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+}
+li{
+	list-style-type: none;
+}
+.container{
+	margin: 0;
+}

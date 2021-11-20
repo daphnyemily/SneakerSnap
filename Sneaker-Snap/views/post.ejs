@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <title>SneakerSnap</title>
+    <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="/post.css">
+</head>
+<body>
+<div class="container">
+    <div class="page">
+      <h1>POST PAGE</h1>
+        <a href="/profile">Profile</a>
+        <a href="/feed">Feed</a>
+        <a href="/logout">Logout</a>
+    </div>
+
+        <div class="posts">
+        <div class="card images"> 
+          <% for(var i=0; i<posts.length; i++) {%>
+            <div class="imgBx">
+              <li class="message">
+              <h4><%= posts[i].caption %></h4>
+               <img src="../<%= posts[i].img %>" alt="">
+            </div>
+              <!--   Comment Form -->
+            <form action="/comment/<%= posts[i]._id %>" method="POST">
+                <input type="text" placeholder="Comment" name="comment">
+                <button type="submit">Submit</button>
+            </form>
+          </li>
+        <% } %>
+        </ul>
+
+        <div class="comments">
+        <h3>comments</h3>
+         <%comments.forEach(comment => {%>
+            <p>✦<%=comment.comment%></p>
+          <%})%>
+         </div>
+      </div>
+    </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
